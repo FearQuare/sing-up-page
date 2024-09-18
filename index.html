@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="assets/fear.svg">
+            <h1>for self development maniacs.</h1>
+        </div>
+    </div>
+    <div class="right">
+        <div class="quote">
+            <p>Are you a self development maniac?</p>
+            <p>This is the safe space for you beucase I am also a self development maniac!
+                If you want to hear about my resources, please sing up!
+            </p>
+            <p>Right below <svg xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 -1150 960 960" width="2rem"
+                    fill="#e8eaed">
+                    <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z" />
+                </svg></p>
+        </div>
+        <form action="/" method="post" class="form">
+            <div class="main">
+                <legend>Let's do this!</legend>
+                <div class="all">
+                    <div class="right-form">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="left-form">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" required>
+                        <label for="phone_number">Phone Number</label>
+                        <input type="text"
+                            pattern="/^+91(7\d|8\d|9\d)\d{9}$/"
+                            title="Please enter a valid phone number"
+                            name="phone_number"
+                            id="phone_number"
+                            required>
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password" required>
+                    </div>
+                </div>
+            </div>
+            <div class="create-account">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="/">Click here</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

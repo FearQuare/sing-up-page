@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    display: flex;
+}
+
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.left {
+    width: 35%;
+    height: 100vh;
+    background-image: url(assets/1336085.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.logo {
+    background-color: rgba(255, 99, 71, 0.575);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
+    color: rgb(236, 234, 234);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.logo img {
+    height: 80%;
+}
+
+.right {
+    width: 65%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1rem;
+    height: 33%;
+    width: 100%;
+    background-color: tomato;
+    font-size: 1.75rem;
+    color: white;
+    font-weight: 500;
+}
+
+.quote p {
+    width: 75%;
+    margin-left: 0.75rem;
+    line-height: 2rem;
+}
+
+.quote p:last-of-type {
+    margin-bottom: 3rem;
+}
+
+em {
+    font-style: italic;
+}
+.form {
+    height: 67%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    height: 50%;
+    width: 100%;
+    background-color: rgb(255, 139, 72);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.main > * {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.all {
+    display: flex;
+    gap: 4rem;
+}
+
+.create-account {
+    height: 50%;
+    width: 100%;
+    background-color: tomato;
+}
+
+legend {
+    font-size: 1.5rem;
+    color:white;
+    font-weight: 500;
+}
+
+.right-form,
+.left-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    height: 2rem;
+    border-radius: 0.5rem;
+    border-width: 2px;
+    border-color: aliceblue;
+    width: 25rem;
+    margin-bottom: 0.5rem;
+    border-style: solid;
+}
+
+input:invalid {
+    border-color: red;
+}
+  
+input:valid {
+    border-color: green;
+}
+
+button {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: bisque;
+    border-style: none;
+    color: tomato;
+}
+
+.create-account > p {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+p > a {
+    color: azure;
+}
